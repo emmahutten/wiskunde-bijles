@@ -459,6 +459,35 @@ x<!DOCTYPE html>
     /* ALT SECTION BG */
     .bg-licht { background: var(--licht); }
 
+    /* TIPS */
+    .tip-sticky {
+      position: absolute;
+      background: #fffbe6;
+      border: 1px solid #f0d96a;
+      border-radius: 4px;
+      padding: 0.75rem 1rem;
+      font-size: 0.82rem;
+      color: #5a4a00;
+      line-height: 1.5;
+      max-width: 190px;
+      box-shadow: 2px 3px 10px rgba(0,0,0,0.10);
+      z-index: 5;
+      pointer-events: none;
+    }
+    .tip-sticky::before {
+      content: '💡 tip';
+      display: block;
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #b8970a;
+      margin-bottom: 0.35rem;
+    }
+    @media (max-width: 900px) {
+      .tip-sticky { display: none; }
+    }
+
     /* FOOTER */
     footer {
       background: #0d1f35;
@@ -577,7 +606,10 @@ x<!DOCTYPE html>
 </section>
 
 <!-- TARIEF -->
-<section id="tarief">
+<section id="tarief" style="position:relative; overflow:visible;">
+  <div class="tip-sticky" style="right: calc(50% - 560px); top: 4rem; transform: rotate(2deg);">
+    Let op woorden als <em>exact</em>, <em>bewijs</em> of <em>bereken</em> — die bepalen hoe je het antwoord moet opschrijven.
+  </div>
   <div class="section-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">Tarief</h2>
@@ -598,7 +630,10 @@ x<!DOCTYPE html>
 </section>
 
 <!-- WERKWIJZE -->
-<section class="bg-licht" id="werkwijze">
+<section class="bg-licht" id="werkwijze" style="position:relative; overflow:visible;">
+  <div class="tip-sticky" style="left: calc(50% - 560px); top: 5rem; transform: rotate(-1.5deg);">
+    Weet je niet waar je moet beginnen? Stel het onbekende gelijk aan <em>x</em> en kijk wat je daarmee al kunt uitrekenen.
+  </div>
   <div class="section-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">Hoe ga ik te werk</h2>
@@ -637,7 +672,10 @@ x<!DOCTYPE html>
 </section>
 
 <!-- REVIEWS -->
-<section id="reviews">
+<section id="reviews" style="position:relative; overflow:visible;">
+  <div class="tip-sticky" style="right: calc(50% - 560px); top: 3.5rem; transform: rotate(1deg);">
+    Begin met de opgaven die je zeker weet — dat geeft vertrouwen en tijd voor de moeilijkere sommen.
+  </div>
   <div class="section-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">Wat leerlingen zeggen</h2>
