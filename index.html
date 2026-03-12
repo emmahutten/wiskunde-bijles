@@ -142,10 +142,21 @@ x<!DOCTYPE html>
     .foto-card {
       position: relative;
       width: 280px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+    .foto-card {
+      position: relative;
+      width: 280px;
     }
     .foto-card img {
-      width: 280px;
-      height: 340px;
+      width: 320px;
+      height: 380px;
       object-fit: cover;
       object-position: center top;
       border-radius: 20px;
