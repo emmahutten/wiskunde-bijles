@@ -87,9 +87,9 @@ x<!DOCTYPE html>
       content: "";
       position: absolute;
       inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg width='700' height='420' viewBox='0 0 700 420' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='white' fill-opacity='0.09' font-family='Times New Roman, serif'%3E%3Ctext x='30' y='70' font-size='38'%3Eπ%3C/text%3E%3Ctext x='180' y='145' font-size='34'%3E√x%3C/text%3E%3Ctext x='330' y='85' font-size='30'%3E∫%3C/text%3E%3Ctext x='500' y='135' font-size='32'%3Ef(x)=x²%3C/text%3E%3Ctext x='70' y='250' font-size='28'%3Esin(x)%3C/text%3E%3Ctext x='245' y='245' font-size='28'%3Ecos(x)%3C/text%3E%3Ctext x='430' y='245' font-size='28'%3EΔy/Δx%3C/text%3E%3Ctext x='540' y='330' font-size='34'%3Elim x→∞%3C/text%3E%3Ctext x='110' y='360' font-size='30'%3Ex²+y²=r²%3C/text%3E%3Ctext x='350' y='355' font-size='28'%3EP(A)=n(A)/n(S)%3C/text%3E%3C/g%3E%3Cg stroke='white' stroke-opacity='0.07' stroke-width='2' fill='none'%3E%3Cpath d='M35 315 Q95 255 155 315 T275 315 T395 315'/%3E%3Cpath d='M470 55 L550 55 L550 135'/%3E%3Ccircle cx='620' cy='300' r='42'/%3E%3Cline x1='620' y1='258' x2='620' y2='342'/%3E%3Cline x1='578' y1='300' x2='662' y2='300'/%3E%3Cline x1='620' y1='300' x2='650' y2='272'/%3E%3Cpath d='M300 150 Q340 95 380 150 T460 150'/%3E%3C/g%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg width='480' height='320' viewBox='0 0 480 320' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='white' fill-opacity='0.07' font-family='Times New Roman, serif'%3E%3Ctext x='20' y='40' font-size='26'%3Eπ%3C/text%3E%3Ctext x='150' y='78' font-size='24'%3E√x%3C/text%3E%3Ctext x='285' y='42' font-size='22'%3E∫%3C/text%3E%3Ctext x='355' y='78' font-size='22'%3Ef(x)=x²%3C/text%3E%3Ctext x='28' y='150' font-size='22'%3Esin(x)%3C/text%3E%3Ctext x='138' y='150' font-size='22'%3Ecos(x)%3C/text%3E%3Ctext x='255' y='150' font-size='20'%3EΔy/Δx%3C/text%3E%3Ctext x='350' y='150' font-size='22'%3Elim x→∞%3C/text%3E%3Ctext x='55' y='265' font-size='21'%3Ex²+y²=r²%3C/text%3E%3Ctext x='270' y='265' font-size='20'%3EP(A)=n(A)/n(S)%3C/text%3E%3C/g%3E%3Cg stroke='white' stroke-opacity='0.05' stroke-width='1.8' fill='none'%3E%3Cpath d='M18 190 Q58 155 98 190 T178 190'/%3E%3Cpath d='M228 190 Q268 155 308 190 T388 190'/%3E%3Ccircle cx='420' cy='245' r='24'/%3E%3Cline x1='420' y1='221' x2='420' y2='269'/%3E%3Cline x1='396' y1='245' x2='444' y2='245'/%3E%3Cline x1='420' y1='245' x2='438' y2='228'/%3E%3C/g%3E%3C/svg%3E");
       background-repeat: repeat;
-      background-size: 560px 340px;
+      background-size: 480px 320px;
       pointer-events: none;
     }
 
@@ -173,22 +173,24 @@ x<!DOCTYPE html>
       border: 4px solid rgba(255,255,255,0.25);
       box-shadow: 0 20px 60px rgba(0,0,0,0.35);
     }
-    .foto-badge {
+      .foto-badge {
       position: absolute;
       bottom: -16px;
       left: 50%;
       transform: translateX(-50%);
+      width: calc(100% - 32px);
       background: var(--wit);
       color: var(--tekst);
       border-radius: 12px;
-      padding: 0.6rem 1.2rem;
-      font-size: 0.9rem;
+      padding: 0.75rem 1rem;
+      font-size: 0.95rem;
       font-weight: 700;
       box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-      white-space: nowrap;
       display: flex;
       align-items: center;
-      gap: 0.4rem;
+      justify-content: center;
+      gap: 0.45rem;
+      text-align: center;
     }
     .foto-badge .prijs { color: var(--groen-dark); }
 
